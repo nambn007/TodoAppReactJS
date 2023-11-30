@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { TodoList } from './components/TodoList';
+import { FormAddTodo } from './components/FormAddTodo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='md::container md::mx-auto px-4 w-full'>
+      <div className='flex flex-col my-10'>
+          <h1 className='text-3xl font-bold underline mx-auto'>TODO App</h1>
+      </div>
+
+      <FormAddTodo/>    
+      <TodoList/>      
+
     </div>
   );
 }
